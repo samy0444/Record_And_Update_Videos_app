@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="#00BCD4"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+<!--                    <ImageView-->
+<!--                        android:layout_width="80dp"-->
+<!--                        android:layout_height="80dp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:scaleType="fitXY"-->
+
+<!--                        android:src="@drawable/screen_recoder_icon"-->
+<!--                         />-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:text="@string/app_name"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <!--  </LinearLayout>-->
+
+
+            </LinearLayout>
+            <!--   </RelativeLayout>-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_nav_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/navigation_item_pressed"
+                    android:onClick="onClick">
+
+                    <ImageView
+                        android:id="@+id/iv_navhome"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/home_24"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+
+                      />
+
+                    <TextView
+                        android:id="@+id/tv_nav_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/iv_navhome"
+                        android:text="Home"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                         />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_nav_myrecording"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/navigation_item_pressed"
+                    android:onClick="onClick">
+
+                    <ImageView
+                        android:id="@+id/iv_my_recording"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/recording"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/iv_my_recording"
+                        android:text="My Recording"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_nav_mygallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/navigation_item_pressed"
+                    android:onClick="onClick">
+
+                    <ImageView
+                        android:id="@+id/iv_my_gallery"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/scrennshot"
+
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/iv_my_gallery"
+                        android:text="Images"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        />
+                </RelativeLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorGrey" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_nav_setting"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/navigation_item_pressed"
+                    android:onClick="onClick">
+
+                    <ImageView
+                        android:id="@+id/iv_navsetting"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/settings_24"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_nav_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+
+                        android:layout_toRightOf="@+id/iv_navsetting"
+                        android:text="Setting"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        />
+                </RelativeLayout>
+
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/rl_nav_privacypolicy"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:background="@drawable/navigation_item_pressed"-->
+<!--                    android:onClick="onClick">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/iv_nav_privacypolicy"-->
+<!--                        android:layout_width="30dp"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:src="@drawable/nav_privacy_policy"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                       />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_nav_privacypolicy"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginLeft="15dp"-->
+
+<!--                        android:layout_toRightOf="@+id/iv_nav_privacypolicy"-->
+<!--                        android:text="Privacy Policy"-->
+<!--                        android:textColor="@color/colorPink"-->
+<!--                        android:textSize="18dp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        />-->
+<!--                </RelativeLayout>-->
+
+                <RelativeLayout
+                    android:id="@+id/rl_nav_aboutus"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/navigation_item_pressed"
+                    android:onClick="onClick">
+
+                    <ImageView
+                        android:id="@+id/iv_navaboutus"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/info_24"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                         />
+
+                    <TextView
+                        android:id="@+id/tv_nav_aboutus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="15dp"
+
+                        android:layout_marginBottom="15dp"
+                        android:layout_toRightOf="@+id/iv_navaboutus"
+                        android:text="About Us"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorGrey" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_nav_shareapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/navigation_item_pressed"
+                    android:onClick="onClick">
+
+                    <ImageView
+                        android:id="@+id/iv_navshareapp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/share_24"
+                         />
+
+                    <TextView
+                        android:id="@+id/tv_nav_shareapp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="13dp"
+                        android:layout_toRightOf="@+id/iv_navshareapp"
+                        android:text="Share App"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/rl_nav_rateapp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:background="@drawable/navigation_item_pressed"-->
+<!--                    android:onClick="onClick">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/iv_nav_rateapp"-->
+<!--                        android:layout_width="30dp"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:src="@drawable/nav_rate"-->
+<!--                        />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_nav_rateapp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_alignParentBottom="true"-->
+<!--                        android:layout_marginLeft="15dp"-->
+
+<!--                        android:layout_marginBottom="15dp"-->
+<!--                        android:layout_toRightOf="@+id/iv_nav_rateapp"-->
+<!--                        android:text="Rate App"-->
+<!--                        android:textColor="@color/colorPink"-->
+<!--                        android:textSize="18dp"-->
+<!--                        android:textStyle="bold" />-->
+<!--                </RelativeLayout>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/rl_nav_moreapp"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:background="@drawable/navigation_item_pressed"-->
+<!--                    android:onClick="onClick">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/iv_nav_moreapp"-->
+<!--                        android:layout_width="30dp"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginLeft="15dp"-->
+<!--                        android:src="@drawable/nav_moreapp"-->
+<!--                         />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_nav_moreapp"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:layout_marginLeft="15dp"-->
+
+<!--                        android:layout_toRightOf="@+id/iv_nav_moreapp"-->
+<!--                        android:text="More App"-->
+<!--                        android:textColor="@color/colorPink"-->
+<!--                        android:textSize="18dp"-->
+<!--                        android:textStyle="bold"-->
+<!--                        />-->
+<!--                </RelativeLayout>-->
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

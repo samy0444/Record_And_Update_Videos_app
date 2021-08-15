@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.recorder.awkscreenrecorder">
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission." />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/screen_recoder_icon"
+        android:roundIcon="@drawable/screen_recoder_icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="com.recorder.awkscreenrecorder.Activities.ActivityGalleryPreview">
+
+        </activity>
+        <activity android:name=".UploadVideos.AddVideoActivity"></activity>
+        <activity android:name=".UploadVideos.VideosActivity" />
+        <activity android:name=".videorec.TrimmerActivity" />
+<activity android:name=".Activities.ActivityScreenHome"/>
+
+
+
+        <activity
+            android:name="com.recorder.awkscreenrecorder.Activities.ActivityMediaProjectionPermission"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:taskAffinity=""
+            android:theme="@style/Theme.Transparent">
+
+        </activity>
+        <activity
+            android:name="com.recorder.awkscreenrecorder.Activities.Activityexitnotification"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+
+        </activity>
+
+        <activity android:name="com.recorder.awkscreenrecorder.Activities.ActivityHome"></activity>
+        <activity android:name="com.recorder.awkscreenrecorder.Activities.ActivitySplash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.recorder.awkscreenrecorder.SettingsActivity" />
+        <activity android:name="com.recorder.awkscreenrecorder.MainActivity">
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.recorder.awkscreenrecorder.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_path" />
+        </provider>
+        <service
+            android:name="com.recorder.awkscreenrecorder.Service.ImageRecordService"
+            android:foregroundServiceType="mediaProjection"
+            tools:targetApi="q"
+            />
+        <service
+            android:name="com.recorder.awkscreenrecorder.Service.FloatingWidgetService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.recorder.awkscreenrecorder.Service.FloatingWidgetService2"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

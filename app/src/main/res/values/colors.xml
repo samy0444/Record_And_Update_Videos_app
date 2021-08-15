@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E70C80</color>
+    <color name="colorPrimaryDark">@android:color/holo_red_dark</color>
+    <color name="colorAccent">#A8E73F0C</color>
+    <color name="white">#ffffff</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGrey">#FC9E9595</color>
+    <color name="colorLightGrey">#AD9E9595</color>
+    <color name="colorBlack">#303030</color>
+    <color name="colorTheme">#E70C80</color>
+    <color name="colorLightTheme">#A8E73F0C</color>
+    <color name="BLUE_A060">#4554AA</color>
+
+    <color name="background_video_color">#2f3031</color>
+    <color name="background_progress_color">#6C6D6D</color>
+    <color name="progress_color">@color/colorPrimary</color>
+    <color name="line_color">#FF15FF00</color>
+    <color name="shadow_color">#FF000000</color>
+    <color name="line_button">#565758</color>
+    <color name="black_translucent">#50000000</color>
+    <color name="black">#161515</color>
+</resources>

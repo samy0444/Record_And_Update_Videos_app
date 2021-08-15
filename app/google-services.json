@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "160696651705",
+    "firebase_url": "https://makevideosandmore-default-rtdb.firebaseio.com",
+    "project_id": "makevideosandmore",
+    "storage_bucket": "makevideosandmore.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160696651705:android:c026e3d170a53efb557068",
+        "android_client_info": {
+          "package_name": "com.example.makevideosandmore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160696651705-d758vpnq5gr0qo5tdjm7unm9l4l32bp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAosTaSx5Zigu5CCM1AhUkx5ZQeS0TG2Cc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "160696651705-d758vpnq5gr0qo5tdjm7unm9l4l32bp8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:160696651705:android:11e79cb5fbc7ea92557068",
+        "android_client_info": {
+          "package_name": "com.recorder.awkscreenrecorder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "160696651705-d758vpnq5gr0qo5tdjm7unm9l4l32bp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAosTaSx5Zigu5CCM1AhUkx5ZQeS0TG2Cc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "160696651705-d758vpnq5gr0qo5tdjm7unm9l4l32bp8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

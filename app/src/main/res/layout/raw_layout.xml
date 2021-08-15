@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <VideoView
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleTv"
+        android:layout_marginStart="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:shadowColor="@color/colorBlack"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:text="Title of the video"
+        android:layout_above="@+id/timeTv"
+        android:textColor="#F44336"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timeTv"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:shadowRadius="2"
+        android:shadowDy="1"
+        android:shadowDx="1"
+        android:shadowColor="@color/colorBlack"
+        android:textColor="#F44336"
+        android:text="dd/MM/yyyy hh:mm"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress"
+        android:layout_centerInParent="true"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/downl"
+        android:src="@drawable/save_alt_24"
+        app:fabSize="mini"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="18dp"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/delete"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/delete"
+        android:src="@drawable/delete_24"
+        android:layout_marginBottom="88dp"
+        android:layout_marginEnd="18dp"
+        app:fabSize="mini"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
